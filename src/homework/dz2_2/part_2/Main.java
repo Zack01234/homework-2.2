@@ -28,12 +28,12 @@ public class Main {
         zhiguli.wheelsCount = 4;
 
         ServiceStation station = new ServiceStation();
-        station.check(car, null, null, null);
-        station.check(car2, null, null, null);
-        station.check(null, bicycle, null, null);
-        station.check(null, bicycle2, null, null);
-        station.check(null, null, truck, null);
-        station.check(null, null, truck2, null);
-        station.check(null, null, null, zhiguli);
+        station.check(car);
+        station.check(car2);
+        station.check(bicycle);
+        station.check(bicycle2);
+        station.check(truck);
+        station.check(truck2);
+        station.check(zhiguli);
     }
 }
