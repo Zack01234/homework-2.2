@@ -4,6 +4,10 @@ public class Zhiguli extends Transport {
     public String modelName;
     public int wheelsCount;
 
+    public Zhiguli(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
+
     public void updateTyre() {
         System.out.println("Меняем покрышку жигули");
     }
@@ -16,5 +20,10 @@ public class Zhiguli extends Transport {
 
     public void checkEngine() {
         System.out.println("Проверяем двигатель жигули");
+    }
+
+    @Override
+    public void repair() {
+
     }
 }

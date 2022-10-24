@@ -1,18 +1,18 @@
 package homework.dz2_2.part_2;
 
 public class Bicycle extends Transport {
-    public String modelName;
-    public int wheelsCount;
-
-    @Override
-    public void updateTyre() {
-        System.out.println("Меняем покрышку велосипеда");
+    public Bicycle(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
 
     @Override
     public void service() {
-        updateTyre();
+
     }
 
-
+    @Override
+    public void repair() {
+        System.out.println("Обслуживаем " + this.modelName);
+        this.updateTyre();
+    }
 }
